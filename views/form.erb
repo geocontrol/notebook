@@ -1,6 +1,14 @@
 <form action="/form" method="post">
 <p>Title: <input type="text" name="title" /><br>
-No of pages <select name="pages">
+<p>Type: <select name="format">
+	<option value="book">Book</option>
+	<option value="classic">Classic</option>
+</select>
+<p>Page Background: <select name="page_background">
+	<option value="plain">plain</option>
+	<option value="grid">grid</option>
+</select>
+<p>No of pages <select name="pages">
 <option value="6">6</option>
 <option value="10">10</option>
 <option value="14">14</option>
@@ -10,6 +18,7 @@ No of pages <select name="pages">
 <option value="30">30</option>
 <option value="34">34</option>
 <option value="38">38</option>
-<input type="submit">
 </select>
+<input type="submit">
+
 </form>
